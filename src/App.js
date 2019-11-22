@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
-import Projects2 from "./components/Projects2";
+import Projects from "./components/Projects";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
 import ScrollUp from "./components/ScrollToTop";
@@ -18,8 +18,8 @@ function App() {
         <Mobile />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/projects2" exact component={Projects2} />
-          <Route path="/projects2/:id" component={Project} />
+          <Route path="/projects" exact component={Projects} />
+          <Route path="/projects/:id" component={Project} />
         </Switch>
         <Footer />
         <ScrollUp scrollStepInPx="50" delayInMs="20" />

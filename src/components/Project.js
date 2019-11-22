@@ -78,7 +78,7 @@ const Project = ({ match }) => {
                   <h5>Role: {item.role}</h5>
                   <h6>{item.description}</h6>
                   <a href={item.live}>{item.placeholder}</a>
-                  <span onClick={() => setOpen(true)}>{item.video}</span>
+                  <span onClick={() => setOpen(!open)}>{item.video}</span>
                   {open && <MediaPlayer video={item.video} />}
                 </div>
                 <div className="col-md-4">

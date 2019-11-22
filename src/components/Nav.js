@@ -13,7 +13,7 @@ const Nav = () => {
               </Link>
             </div>
             <div className="colorlib-navbar-brand">
-              <Link className="colorlib-logo" to="/projects2">
+              <Link className="colorlib-logo" to="/projects">
                 Projects
               </Link>
             </div>
