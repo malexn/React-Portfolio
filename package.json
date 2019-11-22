@@ -2,7 +2,7 @@
   "name": "routing",
   "version": "0.1.0",
   "private": true,
-  "home": "https://malexn.github.io/malexn.github.io",
+  "home": "https://malexn.github.io/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.1.1",
