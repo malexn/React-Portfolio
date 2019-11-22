@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { whileStatement } from "@babel/types";
 
-function Nav() {
+const Nav = () => {
   return (
     <header>
       <div id="header" className="container">
@@ -14,7 +13,7 @@ function Nav() {
               </Link>
             </div>
             <div className="colorlib-navbar-brand">
-              <Link className="colorlib-logo" to="/about">
+              <Link className="colorlib-logo" to="/projects2">
                 Projects
               </Link>
             </div>
@@ -23,6 +22,6 @@ function Nav() {
       </div>
     </header>
   );
-}
+};
 
 export default Nav;
