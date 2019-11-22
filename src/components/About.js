@@ -1,13 +1,13 @@
 import React from "react";
-import profilepicture from "../images/portfolio.jpg";
+// import profilepicture from "../images/portfolio.jpg";
 
-function About() {
+const About = () => {
   return (
     <div className="ftco-section about-section">
       <div id="about" className="container">
         <div className="row d-flex" data-scrollax-parent="true">
           <div className="col-md-2"></div>
-          <div className="col-md-6 wrap ftco-animate">
+          <div className="col-md-6 wrap">
             <div className="about-desc">
               <h1 className="bold-text" id="about">
                 About
@@ -21,9 +21,9 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 profile-img">
             <img
-              src={profilepicture}
+              src={window.location.origin + "/images/portfolio.jpg"}
               alt="profilepicture"
               style={{ height: 300 + "px", width: 200 + "px" }}
             />
@@ -32,6 +32,6 @@ function About() {
       </div>
     </div>
   );
-}
+};
 
 export default About;

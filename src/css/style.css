@@ -12,9 +12,136 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 400px;
-  height: 225px;
-  border-radius: 5%;
+  height: 250px;
   opacity: 0.8;
+}
+
+.dgi {
+  margin-left: 5%;
+}
+
+.skill {
+  pointer-events: none;
+}
+
+.icons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icons li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.icons li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.icons li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #79efb4;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.icons li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #79efb4;
+}
+
+.icons li a:hover {
+  color: #79efb4;
+  box-shadow: 0 0 5px #79efb4;
+  text-shadow: 0 0 5px #79efb4;
+}
+
+.move-top {
+  position: fixed;
+  cursor: pointer;
+  bottom: 30px;
+  right: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  margin-right: 1%;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 43px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.move-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  font-size: 19px;
+  top: 15%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.move-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.move-top:hover i {
+  color: #79efb4;
+  top: 5px;
+}
+
+.content-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .mobile-container {
+    padding-top: 8em;
+  }
+  .content-mobile {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-style: solid;
+    border-color: #79efb4;
+    background-color: #333;
+    border-radius: 25px;
+    display: block;
+  }
 }
 
 @-ms-viewport {
@@ -118,6 +245,7 @@ h3,
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1272,29 +1400,6 @@ body:before {
   transform: rotate(20deg);
 }
 
-body .progressContainer {
-  left: 0;
-  width: 100%;
-  height: 0.4em;
-  margin-bottom: 0px;
-  position: fixed;
-  top: 0px;
-  overflow: hidden;
-  background-color: #121212;
-  content: "";
-  display: table;
-  table-layout: fixed;
-  z-index: 999;
-}
-body .progressBar {
-  width: 0%;
-  float: left;
-  height: 100%;
-  z-index: 99;
-  max-width: 100%;
-  background-color: #aac6eb;
-}
-
 h1,
 h2,
 h3,
@@ -1313,7 +1418,7 @@ h5,
 header {
   padding: 2em 0;
   /* position: absolute; */
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;
@@ -1409,53 +1514,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   }
 }
 
-.ftco-animated {
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    /*-webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);*/
-    -webkit-transform: translate3d(0, 40px, 0);
-    transform: translate3d(0, 40px, 0);
-  }
-
-  to {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    /*-webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);*/
-    -webkit-transform: translate3d(0, 40px, 0);
-    transform: translate3d(0, 40px, 0);
-  }
-
-  to {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
 .ftco-section .ftco-sub-title {
   font-size: 16px;
   text-transform: uppercase;
@@ -1504,8 +1562,9 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 .ftco-footer p {
   color: rgba(255, 255, 255, 0.5);
 }
-.ftco-footer a {
-  color: rgba(255, 255, 255, 0.5);
+.ftco-footer a,
+.icons {
+  color: #79efb4;
 }
 .ftco-footer a:hover {
   color: #fff;
@@ -1529,10 +1588,11 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   width: 60px;
   display: block;
   float: left;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 50%;
   position: relative;
 }
+
 .ftco-footer-social li a span {
   position: absolute;
   font-size: 26px;
