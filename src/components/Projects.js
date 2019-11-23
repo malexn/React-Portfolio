@@ -6,7 +6,7 @@ import "../css/projects.css";
 const Projects2 = () => {
   return (
     <div>
-      <div className="ftco-section about-section">
+      <div className="section projects-section">
         <div className="row ">
           <div className="col-md-2"></div>
           <div className="col-md-6 wrap">
@@ -18,7 +18,7 @@ const Projects2 = () => {
       </div>
       <div className="row justify-content-center">
         {data.programming.map(code => (
-          <Link key={code.id} to={`/projects2/${code.id}`}>
+          <Link key={code.id} to={`/projects/${code.id}`}>
             <div className="wrapper-card">
               <div className="container-card">
                 <p id="txt">{code.name}</p>
@@ -29,7 +29,7 @@ const Projects2 = () => {
           </Link>
         ))}
       </div>
-      <div className="ftco-section about-section">
+      <div className="section projects-section">
         <div className="row">
           <div className="col-md-2"></div>
           <div className="col-md-6 wrap ftco-animate">
@@ -43,7 +43,7 @@ const Projects2 = () => {
       </div>
       <div className="row justify-content-center">
         {data.prototypes.map(proto => (
-          <Link key={proto.id} to={`/projects2/${proto.id}`}>
+          <Link key={proto.id} to={`/projects/${proto.id}`}>
             <div className="wrapper-card">
               <div className="container-card">
                 <p id="txt">{proto.name}</p>

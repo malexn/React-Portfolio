@@ -1,3 +1,19 @@
+/* Desktop */
+/* @media screen and (min-width: 1024px){
+  css here
+} */
+
+/* iPhone 6 & 6+  Portrait or Landscape*/
+/* @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+  css here
+} */
+
+/* Används */
+/* About.js */
+/* section,  about-section, container, row, wrap, about-desc, bold-text, p-5, col-md-2, col-md-6, col-md-4, profile-img*/
+/* Skills.js */
+/*  */
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -14,6 +30,11 @@ img {
   width: 400px;
   height: 250px;
   opacity: 0.8;
+}
+
+.profile-img {
+  height: 300px;
+  width: 200px;
 }
 
 .dgi {
@@ -1270,11 +1291,11 @@ h3,
   }
 }
 
-.d-flex {
+/* .d-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-}
+} */
 
 .justify-content-center {
   -webkit-box-pack: center !important;
@@ -1463,26 +1484,16 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   text-decoration: none;
 }
 
-.about-section h2 {
+.about-section h2,
+.projects-section h2 {
   font-weight: 300;
   letter-spacing: 1px;
-}
-
-@media (max-width: 767.98px) {
-  .about-section {
-    display: block;
-    height: 300px;
-  }
 }
 
 .wrap {
   padding: 0;
 }
-@media (max-width: 767.98px) {
-  .wrap {
-    margin-top: 40px;
-  }
-}
+
 @media (min-width: 768px) {
   .wrap .about-desc {
     position: relative;
@@ -1508,13 +1519,14 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
     display: none;
   }
 }
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
   .wrap .about-desc .bold-text {
-    display: none;
+    display: block;
+    font-size: 5em;
   }
-}
+} */
 
-.ftco-section .ftco-sub-title {
+.section .ftco-sub-title {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.5em;
@@ -1525,12 +1537,12 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   font-weight: 300;
 }
 
-.ftco-section .ftco-primary-title {
+.section .ftco-primary-title {
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-.ftco-section {
+.section {
   padding-top: 6em;
   padding-bottom: 0;
 }

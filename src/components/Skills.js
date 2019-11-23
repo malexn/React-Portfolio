@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section className="ftco-section">
+    <section className="section">
       <div className="container">
         <div className="row mb-5 justify-content-center">
           <div className="col-md-4 justify-content-center">

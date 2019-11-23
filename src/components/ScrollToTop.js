@@ -1,18 +1,6 @@
 import React, { Component } from "react";
 import "../css/projects.css";
-// import { animateScroll as scroll } from "react-scroll";
 
-// const ScrollUp = () => {
-//   const ScrollTo = () => {
-//     scroll.scrollToTop();
-//   };
-
-//   return (
-//     <div className="move-top">
-//       <i className="icon-chevron-up" onClick={ScrollTo}></i>
-//     </div>
-//   );
-// };
 class ScrollUp extends Component {
   state = {
     intervalId: 0,
