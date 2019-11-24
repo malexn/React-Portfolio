@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <header>
-      <div id="header" className="container">
+      <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div className="colorlib-navbar-brand">
-              <Link className="colorlib-logo" to="/">
+            <div className="navbar-brand">
+              <Link className="navbar-text" to="/">
                 Alexander Nordh
               </Link>
             </div>
-            <div className="colorlib-navbar-brand">
-              <Link className="colorlib-logo" to="/projects">
+            <div className="navbar-brand">
+              <Link className="navbar-text" to="/projects">
                 Projects
               </Link>
             </div>

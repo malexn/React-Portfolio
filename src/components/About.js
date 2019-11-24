@@ -1,6 +1,10 @@
-import React from "react";
-
+import React, { useState } from "react";
+import Loader from "./Loader";
 const About = () => {
+  const [loaded, setLoaded] = useState(false);
+  const onLoading = () => {
+    setLoaded(true);
+  };
   return (
     <div className="section about-section">
       <div className="container">
@@ -23,7 +27,9 @@ const About = () => {
               className="profile-img"
               src={window.location.origin + "/images/portfolio.jpg"}
               alt="profilepicture"
+              onLoad={onLoading}
             />
+            {!loaded && <Loader />}
           </div>
         </div>
       </div>

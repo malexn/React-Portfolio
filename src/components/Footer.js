@@ -6,11 +6,11 @@ const Footer = () => {
   };
 
   return (
-    <footer className="ftco-footer ftco-bg-dark" id="contact">
-      <div id="footer" className="container">
+    <footer className="ftco-footer ftco-bg-dark">
+      <div className="container">
         <div className="row mb-5 justify-content-center">
           <div className="col-md-5 text-center">
-            <div className="ftco-footer-widget">
+            <div>
               <h2 className="mb-3">Contact</h2>
               <p className="h3 email">
                 <a href="#" onClick={onClickMail}>
@@ -23,12 +23,12 @@ const Footer = () => {
         <div className="row mb-5 justify-content-center">
           <div className="col-md-5 text-center">
             <ul className="icons">
-              <li className="ftco-animate">
+              <li>
                 <a href="https://www.linkedin.com/in/alexander-nordh-464133164/">
                   <span className="icon-linkedin"></span>
                 </a>
               </li>
-              <li className="ftco-animate">
+              <li>
                 <a href="https://github.com/malexn">
                   <span className="icon-github"></span>
                 </a>

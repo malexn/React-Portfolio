@@ -25,6 +25,7 @@ const Project = ({ match }) => {
               <div className="row justify-content-center item-row">
                 <div className="col-md-7 justify-content-start mb-5">
                   <h5>Role: {item.role}</h5>
+                  <h6>Environment: {item.environment}</h6>
                   <h6>{item.description}</h6>
                   <a href={item.live}>{item.placeholder}</a>
                   <div className="row justify-content-center">
@@ -41,7 +42,7 @@ const Project = ({ match }) => {
                     <div className="col-md-2">
                       {item.report}
                       <div>
-                        <a href="#" onClick={() => openPdf(item.pdf)}>
+                        <a href="" onClick={() => openPdf(item.pdf)}>
                           {item.pdf}
                         </a>
                       </div>
@@ -76,13 +77,14 @@ const Project = ({ match }) => {
               <div className="row justify-content-center item-row">
                 <div className="col-md-7 justify-content-start mb-5">
                   <h5>Role: {item.role}</h5>
+                  <h6>Environment: {item.environment}</h6>
                   <h6>{item.description}</h6>
                   <a href={item.live}>{item.placeholder}</a>
                   <span onClick={() => setOpen(!open)}>{item.video}</span>
                   {open && <MediaPlayer video={item.video} />}
                 </div>
                 <div className="col-md-4">
-                  <a href="#" onClick={() => openPdf(item.pdf)}>
+                  <a href="" onClick={() => openPdf(item.pdf)}>
                     <img
                       className="report-img"
                       src={window.location.origin + "/images/" + item.img}

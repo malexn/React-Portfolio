@@ -1,16 +1,15 @@
 import React from "react";
 import data from "../data";
 import { Link } from "react-router-dom";
-import "../css/projects.css";
 
 const Projects2 = () => {
   return (
     <div>
       <div className="section projects-section">
-        <div className="row ">
+        <div className="row">
           <div className="col-md-2"></div>
           <div className="col-md-6 wrap">
-            <div className="about-desc">
+            <div className="project-desc">
               <h1 className="bold-text">Code</h1>
             </div>
           </div>
@@ -32,11 +31,9 @@ const Projects2 = () => {
       <div className="section projects-section">
         <div className="row">
           <div className="col-md-2"></div>
-          <div className="col-md-6 wrap ftco-animate">
-            <div className="about-desc">
-              <h1 className="bold-text" id="about">
-                Prototype
-              </h1>
+          <div className="col-md-6 wrap">
+            <div className="project-desc">
+              <h1 className="bold-text">Prototype</h1>
             </div>
           </div>
         </div>
