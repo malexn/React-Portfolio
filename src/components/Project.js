@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import MediaPlayer from "./MediaPlayer";
+import Loader from "./Loader";
 
 import data from "../data";
 
 const Project = ({ match }) => {
   const [open, setOpen] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+
   const openPdf = ref => {
     const url = window.location.origin + "/documents/" + ref;
     window.open(url, "_blank");
+  };
+  const onLoading = () => {
+    setLoaded(true);
   };
 
   const fetchItem = () => {
@@ -53,6 +59,7 @@ const Project = ({ match }) => {
                   <img
                     src={window.location.origin + "/images/" + item.img}
                     alt={item.name}
+                    onLoad={onLoading}
                   />
                   <span className="dgi" onClick={() => setOpen(!open)}>
                     {item.video}
@@ -80,7 +87,9 @@ const Project = ({ match }) => {
                   <h6>Environment: {item.environment}</h6>
                   <h6>{item.description}</h6>
                   <a href={item.live}>{item.placeholder}</a>
-                  <span onClick={() => setOpen(!open)}>{item.video}</span>
+                  <span className="video" onClick={() => setOpen(!open)}>
+                    {item.video}
+                  </span>
                   {open && <MediaPlayer video={item.video} />}
                 </div>
                 <div className="col-md-4">
@@ -89,6 +98,7 @@ const Project = ({ match }) => {
                       className="report-img"
                       src={window.location.origin + "/images/" + item.img}
                       alt={item.name}
+                      onLoad={onLoading}
                     />
                   </a>
                 </div>
@@ -100,7 +110,11 @@ const Project = ({ match }) => {
     }
   };
 
-  return <section>{fetchItem()}</section>;
+  return (
+    <section>
+      {fetchItem()} {!loaded && <Loader />}
+    </section>
+  );
 };
 
 export default Project;

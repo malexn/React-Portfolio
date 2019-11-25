@@ -7,6 +7,13 @@
   margin-left: 5%;
 }
 
+.dgi:hover,
+.video:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #35e78e;
+}
+
 .item-row {
   margin-top: 5%;
 }

@@ -8,19 +8,9 @@
   css here
 } */
 
-/* Används */
-/* About.js */
-/* section,  about-section, container, row, wrap, about-desc, bold-text, p-5, col-md-2, col-md-6, col-md-4, profile-img*/
-/* Skills.js */
-/* mb-5, col-md-4, justify-content-center, text-center, ftco-footer-social, list-unstyled  */
-/* Footer.js 
-  ftco-footer, ftco-bg-dark, container, mb-5, text-center, mb-3, h3, email, icons 
-*/
-
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700");
 
 html {
-  /* används */
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -30,7 +20,6 @@ html {
 }
 
 img {
-  /* används */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -40,18 +29,15 @@ img {
 }
 
 .profile-img {
-  /* används */
   height: 300px;
   width: 200px;
 }
 
 .skill {
-  /* används */
   pointer-events: none;
 }
 
 .icons {
-  /* används */
   margin: 0;
   padding: 0;
   display: flex;
@@ -62,13 +48,11 @@ img {
 }
 
 .icons li {
-  /* används */
   list-style: none;
   margin: 0 15px;
 }
 
 .icons li a {
-  /* används */
   position: relative;
   display: block;
   width: 60px;
@@ -84,7 +68,6 @@ img {
 }
 
 .icons li a::before {
-  /* används */
   content: "";
   position: absolute;
   top: 0;
@@ -99,20 +82,17 @@ img {
 }
 
 .icons li a:hover::before {
-  /* används */
   transform: scale(1.1);
   box-shadow: 0 0 15px #79efb4;
 }
 
 .icons li a:hover {
-  /* används */
   color: #79efb4;
   box-shadow: 0 0 5px #79efb4;
   text-shadow: 0 0 5px #79efb4;
 }
 
 .move-top {
-  /* används */
   position: fixed;
   cursor: pointer;
   bottom: 30px;
@@ -130,7 +110,6 @@ img {
 }
 
 .move-top i {
-  /* används */
   color: #fff;
   margin: 0;
   position: relative;
@@ -144,32 +123,27 @@ img {
 }
 
 .move-top:hover {
-  /* används */
   background: rgba(0, 0, 0, 0.9);
 }
 
 .move-top:hover i {
-  /* används */
   color: #79efb4;
   top: 5px;
 }
 
 .content-mobile {
-  /* används */
   display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: används*/
+  /* For mobile phones:*/
   [class*="col-"] {
     width: 100%;
   }
   .mobile-container {
-    /* används */
     padding-top: 8em;
   }
   .content-mobile {
-    /* används */
     margin: auto;
     width: 90%;
     padding: 10px;
@@ -186,7 +160,6 @@ img {
 footer,
 header,
 section {
-  /* Används: section, header */
   display: block;
 }
 
@@ -209,7 +182,6 @@ h3,
 h4,
 h5,
 h6 {
-  /* används: h3 */
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -304,7 +276,6 @@ h3,
 }
 
 .row {
-  /* Används */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,7 +299,6 @@ h3,
 .col-md-12,
 .col-md,
 .col-md-auto {
-  /* används: col-md-5, col-md-2, col-md-4, col-md-6, col-md-12, col-md-7  */
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -344,7 +314,6 @@ h3,
     max-width: 8.33333%;
   }
   .col-md-2 {
-    /* används */
     -webkit-box-flex: 0;
     -ms-flex: 0 0 16.66667%;
     flex: 0 0 16.66667%;
@@ -357,28 +326,24 @@ h3,
     max-width: 25%;
   }
   .col-md-4 {
-    /* används */
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
   .col-md-5 {
-    /* används */
     -webkit-box-flex: 0;
     -ms-flex: 0 0 41.66667%;
     flex: 0 0 41.66667%;
     max-width: 41.66667%;
   }
   .col-md-6 {
-    /* används */
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
   .col-md-7 {
-    /* används */
     -webkit-box-flex: 0;
     -ms-flex: 0 0 58.33333%;
     flex: 0 0 58.33333%;
@@ -409,7 +374,6 @@ h3,
     max-width: 91.66667%;
   }
   .col-md-12 {
-    /* används */
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -418,7 +382,6 @@ h3,
 }
 
 .justify-content-center {
-  /* används */
   -webkit-box-pack: center !important;
   -ms-flex-pack: center !important;
   justify-content: center !important;
@@ -433,17 +396,14 @@ h3,
 }
 
 .mb-3 {
-  /* används */
   margin-bottom: 1rem !important;
 }
 
 .mb-5 {
-  /* används */
   margin-bottom: 3rem !important;
 }
 
 .p-5 {
-  /* används */
   padding: 3rem !important;
 }
 
@@ -452,7 +412,6 @@ h3,
 }
 
 .text-center {
-  /* används */
   text-align: center !important;
 }
 
@@ -514,14 +473,12 @@ h5,
 .h3,
 .h4,
 .h5 {
-  /* används: h3 */
   line-height: 1.5;
   color: #fff;
   font-weight: 400;
 }
 
 header {
-  /* används */
   padding: 2em 0;
   /* position: absolute; */
   /* position: fixed; */
@@ -533,17 +490,14 @@ header {
 }
 @media (max-width: 767.98px) {
   header {
-    /* används */
     padding: 2em 0;
     position: absolute;
   }
 }
 header .navbar-brand {
-  /* används */
   float: left;
 }
 header .navbar-brand .navbar-text {
-  /* används */
   font-size: 20px;
   text-transform: uppercase;
   color: #fff;
@@ -559,18 +513,15 @@ header .navbar-brand .navbar-text {
 
 .about-section h2,
 .projects-section h2 {
-  /* Används */
   font-weight: 300;
   letter-spacing: 1px;
 }
 
 .wrap {
-  /* används */
   padding: 0;
 }
 
 @media (min-width: 768px) {
-  /* används */
   .wrap .about-desc,
   .wrap .project-desc {
     position: relative;
@@ -578,7 +529,6 @@ header .navbar-brand .navbar-text {
 }
 .wrap .about-desc .bold-text,
 .wrap .project-desc .bold-text {
-  /* används */
   position: absolute;
   top: -80px;
   left: -50px;
@@ -591,31 +541,26 @@ header .navbar-brand .navbar-text {
 @media (min-width: 992px) {
   .wrap .about-desc .bold-text,
   .wrap .project-desc .bold-text {
-    /* används */
     font-size: 10em;
   }
 }
 @media (max-width: 991.98px) {
   .wrap .about-desc .bold-text,
   .wrap .project-desc .bold-text {
-    /* används */
     display: none;
   }
 }
 
 .section {
-  /* Används */
   padding-top: 6em;
   padding-bottom: 0;
 }
 
 .ftco-bg-dark {
-  /* används */
   background: #3c312e;
 }
 
 .ftco-footer {
-  /* används */
   font-size: 16px;
   background: #121212;
   padding: 8em 0;
@@ -623,12 +568,10 @@ header .navbar-brand .navbar-text {
 
 .ftco-footer h2,
 .ftco-footer h4 {
-  /* används */
   font-weight: normal;
   color: rgba(255, 255, 255, 0.9);
 }
 .ftco-footer .email a {
-  /* används */
   color: #fff;
 }
 .ftco-footer h2 {
@@ -636,18 +579,15 @@ header .navbar-brand .navbar-text {
 }
 
 .icons {
-  /* används */
   color: #79efb4;
 }
 
 .ftco-footer-social li {
-  /* används */
   list-style: none;
   margin: 0 10px 10px 0;
   display: inline-block;
 }
 .ftco-footer-social li a {
-  /* används */
   height: 60px;
   width: 60px;
   display: block;
@@ -658,7 +598,6 @@ header .navbar-brand .navbar-text {
 }
 
 .ftco-footer-social li a span {
-  /* används */
   position: absolute;
   font-size: 26px;
   top: 50%;
@@ -668,12 +607,10 @@ header .navbar-brand .navbar-text {
   transform: translate(-50%, -50%);
 }
 .ftco-footer-social li a:hover {
-  /* används */
   color: #fff;
 }
 
 .heading-section span {
-  /* används */
   text-transform: uppercase;
   letter-spacing: 5px;
 }
